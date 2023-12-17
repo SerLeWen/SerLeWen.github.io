@@ -1,0 +1,211 @@
+<!doctype html><html ng-app="TGVApplication" ng-strict-di><head><base href="/"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><title>TGV Cinemas</title><meta name="keywords" content="tgv cinemas,movies,movieclub,ticket,cinema malaysia,watch movie,movie showtime"><meta name="description" content="TGV Cinemas is a renowned cinema chain and entertainment centre in Malaysia. With a presence of 38 locations, 310 screens and over 50,000 seats nationwide, TGV Cinemas is one of the fastest-growing multiplex cinemas. Playing host to many unique cinematic experiences such as the immersive IMAX(R), sense-enhancing Flexound, fun Family Friendly and captivating Infinity Dolby Atmos halls, TGV aims to bring a world of entertainment for all!"><meta name="og:title" property="og:title" content="TGV Cinemas"><meta name="og:description" property="og:description" content="TGV Cinemas is a renowned cinema chain and entertainment centre in Malaysia. With a presence of 38 locations, 310 screens and over 50,000 seats nationwide, TGV Cinemas is one of the fastest-growing multiplex cinemas. Playing host to many unique cinematic experiences such as the immersive IMAX(R), sense-enhancing Flexound, fun Family Friendly and captivating Infinity Dolby Atmos halls, TGV aims to bring a world of entertainment for all!"><meta property="og:type" content="website"><meta property="og:image" content="/assets/images/metadata/fb-icon.jpg"><meta property="og:site_name" content="TGV Cinemas"><meta property="fb:admins" content="702263309"><meta name="author" content="TGV Cinemas"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"><meta name="msapplication-TileImage" content="/assets/images/metadata/apple-touch-icon-144x144-precomposed.png"><meta name="msapplication-TileColor" content="#222222"><meta name="facebook-domain-verification" content="u8gk52nfqrt40j8192gtaxga6lhi10"/><link rel="canonical" href="/"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/metadata/apple-touch-icon-114x114-precomposed.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/metadata/apple-touch-icon-72x72-precomposed.png"><link rel="apple-touch-icon-precomposed" href="/assets/images/metadata/apple-touch-icon-57x57-precomposed.png"><link rel="shortcut icon" href="/assets/images/metadata/apple-touch-icon-57x57-precomposed.png"><link rel="apple-touch-icon" href="/assets/images/metadata/apple-touch-icon-57x57-precomposed.png"><link rel="shortcut icon" href="/assets/images/favicon.ico"><link href="//plus.google.com/109023281469804746126" rel="publisher"><link href="~/assets/images/fb-icon.jpg" rel="shortcut icon" type="image/png"/><link rel="stylesheet" href="/assets/css/bootstrap.min.css?v="/><link rel="stylesheet" href="/assets/css/bootstrap-select.css?v="/><link rel="stylesheet" href="/assets/css/bootstrap-4-spacing-utilities.css"/><link rel="stylesheet" href="/assets/css/slick.css?v="/><link rel="stylesheet" href="/assets/css/trackpad-scroll-emulator.css?v="/><link rel="stylesheet" href="/assets/css/reset.css?v="/><link rel="stylesheet" href="/assets/css/tgv-style.css?v="/><link rel="stylesheet" href="/assets/css/confirmation.css?v="/><link rel="stylesheet" href="/assets/css/tgv-responsive.css?v="/><link rel="stylesheet" href="/assets/css/tgv-dev.css?v="/><link rel="stylesheet" href="/assets/css/tgv-print-style.css?v="/><link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css?v="/><link rel="stylesheet" href="/dist/css/supplementary.css"><script src="env.js"></script><script src="/assets/js/jquery-3.3.1.min.js?v="></script><script src="/assets/js/bootstrap.min.js?v="></script><script src="/assets/js/bootstrap-select.js?v="></script><script src="/assets/js/slick.min.js?v="></script><script src="/assets/js/jquery.trackpad-scroll-emulator.min.js?v="></script><script src="/assets/js/common.js?v=1"></script><script src="/assets/js/jquery.mCustomScrollbar.concat.min.js?v="></script><script src="/assets/js/jquerysession.js?v="></script><script src="/assets/js/moment.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script><script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer="defer"></script><script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><link href="css/supplementary.css" rel="stylesheet"></head><body ng-class="Bookingclass"><app-root><div layout-directive><section class="page-loader" style="display:none"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></section><section ng-class="pageclass"><section class="error-popup-content" id="Error-modal" style="display:none;"><aside class="error-popup-body"><aside class="error-content"><a href="javascript:;" onclick="hideErrorModel();" class="error-popup-close">&nbsp;</a><p></p></aside></aside></section><header ng-class="{
+                'user-login': (LayoutType == '1' && userDetails),
+                'user-non-login': (LayoutType == '1' && !userDetails),
+                'loginflow': (LayoutType == '2')
+            }"><section class="container"><figure class="tgv-logo"><a href="/" id="tgvlogo"><svg class="icon"><use href="/dist/assets/icons/icons.svg#sprite-tgv-logo"></use></svg></a></figure><aside class="back-btn"><a href="javascript:;" goback-directive title="Back">back</a></aside><search></search><aside class="tgv-burger-menu"><a href="javascript:;" class="tgv-burger-menu-icon">&nbsp;</a></aside><section class="tgv-right-block burger-menu-mobile"><nav><ul><li ng-class="{
+                                    'tgv-showtimes': true,
+                                    'active': activeNav === 'showtimes'
+                                }"><a ng-href="/showtimes" title="Showtimes">Showtimes</a></li><li ng-class="{
+                                    'tgv-cinemas': true,
+                                    'active': activeNav === 'cinemas'
+                                }"><a ng-href="/cinemas" title="Cinemas">Cinemas</a></li><li ng-class="{
+                                    'tgv-experience d-none d-md-inline-block': true,
+                                    'active': activeNav === 'experience'
+                                }"><a ng-href="/experience">Experiences</a></li><li ng-class="{
+                                    'tgv-promation': true,
+                                    'active': activeNav === 'promotions'
+                                }"><a ng-href="/promotions" title="Promotions">Promotions</a></li><li class="tgv-promation"><a href="/news" active-nav="active">News</a></li><li><a href="/eshop" active-nav="active" style="text-transform:none;"><img src="/assets/images/gift-shop/icons/cart_icon.png" alt="eShop" class="nav-icon">eShop</a></li></ul></nav><section class="tgv-right-nav"><user-profile-badge user-details="userDetails"></user-profile-badge><section class="side-nav-fixed"><aside class="side-nav-block"><a href="javascript:;" class="side-nav-close">&nbsp;</a><ul class="tgv-nav"><li class="tgv-movie-club"><a href="/movieclub" active-nav="active" title="MovieClub">MovieClub</a></li><li class="tgv-cinemas"><a href="/private-cinema" active-nav="active" title="Private Cinema">Private Cinema</a></li><li class="tgv-experience"><a href="/experience" active-nav="active" title="Experiences">Experiences</a></li><li class="tgv-corporate"><a href="/corporate-sales" active-nav="active" title="Corporate Sales">Corporate Sales</a></li><li class="tgv-aboutus"><a href="/about-us" active-nav="active" title="About Us">About Us</a></li><li class="tgv-faq"><a href="https://help.tgv.com.my/portal/en/home" target="_blank" title="Customer Service">Customer Service</a></li><li class="tgv-announcement"><a href="/careers" active-nav="active" title="Careers">Careers</a></li><li class="tgv-announcement d-none d-md-block"><a href="/news" active-nav="active" title="News">News</a></li></ul><aside class="media-app-block"><ul class="tgv-media-block"><li class="icon-fb"><a href="https://www.facebook.com/TGVCinemas" target="_blank" rel="nofollow" title="Facebook">&nbsp;</a></li><li class="icon-twitr"><a href="https://twitter.com/TGVCinemas" target="_blank" rel="nofollow" title="Twitter">&nbsp;</a></li><li class="icon-ins"><a href="https://www.instagram.com/tgvcinemas" target="_blank" rel="nofollow" title="Instagram">&nbsp;</a></li><li class="icon-utube"><a href="https://www.youtube.com/user/TGVCinemas" target="_blank" rel="nofollow" title="YouTube">&nbsp;</a></li></ul><ul class="tgv-app-block"><li>Download App</li><li class="icon-plays-troe"><a href="https://play.google.com/store/apps/details?id=my.com.tgv.app" target="_blank" title="Play Store">&nbsp;</a></li><li class="icon-app-stroe"><a href="https://itunes.apple.com/my/app/tgv-cinemas/id682997885?mt=8&ign-mpt=uo%3D4" target="_blank" title="App Store">&nbsp;</a></li><li class="icon-huawei-gallery"><a href="https://appgallery.huawei.com/app/C100101875" target="_blank" title="App Gallery">&nbsp;</a></li></ul></aside></aside></section></section></section><section class="close-icon-blocks"><a href="javascript:;" ng-if="bookingflow !='1' && bookingflow !='2'" class="sign-in-close-icon" goback-directive>&nbsp;</a> <a href="javascript:;" ng-if="bookingflow == '2'" ng-href="/" class="icon-home">&nbsp;</a></section></section></header><div class="header-spacer"></div><section><div id="main"><div ng-view ng-cloak></div></div></section><div ng-if="LayoutType == '1'" id="HomeFooter"><footer ng-show="LayoutType != undefined && LayoutType =='1'"><section class="tgv-contact-block"><div class="clickable-icons"><a href="https://help.tgv.com.my/portal/en/home" target="_blank"><img src="/assets/images/icons/mail.png" alt="" class="icon"></a><a href="https://help.tgv.com.my/portal/en/home" target="_blank"><img src="/assets/images/icons/chat.png" alt="" class="icon"></a></div><a href="https://help.tgv.com.my/portal/en/home" target="_blank" class="tgv-customer-num">Customer Service</a></section><section class="tgv-ftr-row2"><section class="container"><section class="tgv-accordion-block"><aside class="tgv-col tgv-col-1"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/movies" title="Movies">Movies</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li><a href="javascript:;" ng-href="/movies" title="Now Showing">Now Showing</a></li><li><a href="javascript:;" ng-href="/movies/?type=comingsoon" title="Coming Soon">Coming Soon</a></li></ul></section></aside><aside class="tgv-col tgv-col-2"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/movieclub" title="MovieClub">MovieClub</a> <span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li><a href="javascript:;" ng-href="/movieclub" title="MovieClub">MovieClub</a></li></ul></section></aside><aside class="tgv-col tgv-col-3"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/experience" title="Experiences">Experiences</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li ng-repeat="exp in experienceList" ng-if="exp.banners.length"><a ng-href="/experience/{{ exp.urlSlug }}" ng-attr-title="{{ exp.name }}">{{ exp.name }}</a></li></ul></section></aside><aside class="tgv-col tgv-col-4"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/showtimes" title="Showtimes">Showtimes</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li><a href="javascript:;" ng-href="/showtimes" title="Select By Movie">Select By Movie</a></li><li><a href="javascript:;" ng-href="/showtimes" title="Select By Cinema">Select By Cinema</a></li></ul></section></aside><aside class="tgv-col tgv-col-5"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/cinemas" title="Cinemas">Cinemas</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li><a href="javascript:;" ng-href="/cinemas" title="Find A Cinema">Find A Cinema</a></li></ul></section></aside><aside class="tgv-col tgv-col-6"><h3 class="tgv-accordion-head"><a href="/promotions" title="Promotions">Promotions</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li ng-repeat="promo in promotionCategoryList"><a ng-href="/promotions?ref={{ promo.name }}" title="{{ promo.name }}">{{ promo.name }}</a></li></ul></section></aside><aside class="tgv-col tgv-col-7"><h3 class="tgv-accordion-head"><a href="javascript:;" ng-href="/about-us" title="About TGV">About TGV</a><span>&nbsp;</span></h3><section class="tgv-accordion-body"><ul class="tgv-detail-lists"><li><a href="/about-us" title="About Us">About Us</a></li><li><a href="/careers" title="Careers">Careers</a></li><li><a href="/contact-us" title="Contact Us">Contact Us</a></li><li><a href="/corporate-sales" title="Corporate Sales">Corporate Sales</a></li><li><a href="https://help.tgv.com.my/portal/en/home" target="_blank" title="Customer Service">Customer Service</a></li></ul></section></aside></section></section></section><section class="tgv-ftr-row3"><figure><a href="javascript:;" ng-href="/" title="TGV Cinemas"><svg class="tgv-logo"><use href="/dist/assets/icons/icons.svg#sprite-tgv-logo"></use></svg></a></figure><section class="container"><ul class="tgv-app-block clearfix"><li>Download App</li><li class="tgv-android-app"><a href="https://play.google.com/store/apps/details?id=my.com.tgv.app" target="_blank" title="Play Store">&nbsp;</a></li><li class="tgv-iphone-app"><a href="https://itunes.apple.com/my/app/tgv-cinemas/id682997885?mt=8&ign-mpt=uo%3D4" target="_blank" title="App Store">&nbsp;</a></li><li class="tgv-huawei-app"><a href="https://appgallery.huawei.com/app/C100101875" target="_blank" title="App Gallery">&nbsp;</a></li></ul><ul class="tgv-social-block clearfix"><li>Connect with Us</li><li class="tgv-fb"><a href="https://www.facebook.com/TGVCinemas" target="_blank" rel="nofollow" title="Facebook">&nbsp;</a></li><li class="tgv-instagram"><a href="https://www.instagram.com/tgvcinemas" target="_blank" rel="nofollow" title="Instagram">&nbsp;</a></li><li class="tgv-twitter"><a href="https://twitter.com/TGVCinemas" target="_blank" rel="nofollow" title="Twitter">&nbsp;</a></li><li class="tgv-utube"><a href="https://www.youtube.com/user/TGVCinemas" target="_blank" rel="nofollow" title="You Tube">&nbsp;</a></li></ul></section></section><section class="tgv-ftr-row4"><section class="container"><ul class="tgv-terams-condition-block"><li><a href="/terms-conditions" title="Terms & Conditions">Terms &amp; Conditions</a></li><li><a href="/copyright" title="Copyright Notice">Copyright Notice</a></li><li><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></li><li><a href="/disclaimer" title="Disclaimer">Disclaimer</a></li><li><a href="/abc-policy" title="ABC Policy">ABC Policy</a></li><li><a href="/whistleblowing-policy" title="Whistleblowing Policy">Whistleblowing Policy</a></li></ul><p class="tgv-copy-rights">Copyright Reserved Â© 2020 TGV Cinemas Sdn Bhd. All Rights Reserved.</p></section></section></footer><section class="go-top" id="btnGo-top"><span>TOP</span></section><aside class="side-nav-overlay"></aside><script>//Home Page > footer > toggle the component with class accordion_body
+                    jQuery(".tgv-accordion-block .tgv-col").each(function (index) {
+                        var thisval = jQuery(this);
+                        jQuery(this).find('.tgv-accordion-head span').click(function () {
+                            if (jQuery(window).width() > 639) {} else {
+                                setTimeout(function () {
+                                    jQuery("html,body").animate({
+                                        scrollTop: (thisval.offset().top - jQuery(
+                                            "header").outerHeight())
+                                    }, 800);
+                                }, 500);
+                            }
+
+                        });
+                    });
+                    //Home Page > footer > toggle the component with class accordion_body
+                    jQuery(".tgv-accordion-head span").click(function () {
+                        if (jQuery(window).width() > 639) {
+                            jQuery(this).parent().removeClass("open");
+                        } else {
+                            if (jQuery('.tgv-accordion-body').is(':visible')) {
+                                jQuery(".tgv-accordion-body").slideUp(300);
+                                jQuery('.tgv-accordion-head').removeClass("open");
+                            }
+                            if (jQuery(this).parent().next(".tgv-accordion-body").is(':visible')) {
+                                jQuery(this).parent().next(".tgv-accordion-body").slideUp(300);
+                                jQuery(this).parent().removeClass("open");
+                            } else {
+                                jQuery(this).parent().next(".tgv-accordion-body").slideDown(300);
+                                jQuery(this).parent().addClass("open");
+                            }
+                        }
+                    });
+
+                    //jQuery('header .tgv-right-block .side-nav-fixed .side-nav-block .tgv-nav li').click(function () {
+                    //    jQuery('header .tgv-right-block .side-nav-fixed .side-nav-block .tgv-nav li').removeClass('active');
+                    //    jQuery(this).addClass('active');
+                    //})</script></div><div ng-if="LayoutType != '1'"><section class="go-top" id="btnGo-top" style="display:none;"><span>TOP</span></section></div></section><script>function createGoogleTagManager(event) {
+                try {
+
+                    //console.log('Before gtm push:'+ JSON.stringify(event));
+                    dataLayer.push(event);
+                    // console.log('After gtm push:' + JSON.stringify(event));
+                } catch (e) {
+                    ////console.log('gtm error: ' + e)
+                }
+            }
+
+            function GetFilename(fileName) {
+                try {
+                    if (fileName) {
+                        if (fileName.indexOf(".") > 0) {
+                            fileName = fileName.substring(0, fileName.lastIndexOf("."));
+                            return fileName
+                        }
+                    }
+                } catch (e) {}
+                return "";
+            }
+
+            function GtmDateFormat(dynamicdate) {
+                var dt = new Date(dynamicdate);
+                var weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+                return ((dt.getDate() < 10) ? "0" + dt.getDate() : dt.getDate()) + "-" + ((dt.getMonth() + 1) < 10 ?
+                    "0" + (dt.getMonth() + 1) : (dt.getMonth() + 1)) + "-" + (dt.getFullYear() + ' (' + weekday[dt
+                    .getDay()] + ')');
+            }
+
+            function hideErrorModel() {
+                $('#Error-modal').hide();
+                $('#Error-modal p').html('');
+            }
+
+            function showErrorModel(msg) {
+                $('#Error-modal p').html('');
+                $('#Error-modal p').html(msg);
+                $('#Error-modal').show();
+            }
+
+            setTimeout(function () {
+                layoutScipt();
+            }, 1000)
+
+            function layoutScipt() {
+                //Burger menu
+                jQuery('.side-nav-overlay').fadeOut();
+                jQuery('.tgv-burger-menu .tgv-burger-menu-icon').on('click', function () {
+                    jQuery('.tgv-wrapper').addClass('side-nav-open');
+                    jQuery('.side-nav-overlay').css({
+                        'opacity': '100',
+                        'display': 'block'
+                    });
+                    jQuery('.side-nav-overlay').fadeIn();
+
+                });
+                jQuery(
+                        '.side-nav-overlay,.side-nav-close,header .tgv-right-block li a,header .tgv-logo a svg,header .tgv-right-block.burger-menu-mobile .tgv-right-nav .tgv-movie-club-login .tgv-movieclub-more a,header .tgv-right-block.burger-menu-mobile .tgv-right-nav .tgv-movie-club-login .tgv-movieclub a,header .tgv-right-block .tgv-right-nav .tgv-movie-club-login ul li a'
+                    )
+                    .on('click', function () {
+
+                        if (jQuery('.tgv-wrapper').hasClass('side-nav-open')) {
+                            jQuery('.tgv-wrapper').removeClass('side-nav-open');
+                        }
+                        jQuery('.tgv-wrapper').removeClass('side-nav-open');
+                        jQuery('.side-nav-overlay').css({
+                            'opacity': '100',
+                            'display': 'block'
+                        });
+                        jQuery('.side-nav-overlay').fadeOut();
+                    });
+                jQuery(
+                        'header .tgv-right-block li a,.profile .profile-drop-down li a,header .tgv-right-block .tgv-right-nav .tgv-movie-club-login ul li a'
+                    )
+                    .on('click', function () {
+                        var windowWidth = jQuery(window).width();
+                        if (windowWidth <= 991) {
+                            $('header .tgv-right-block,.tgv-wrapper').css({
+                                'transition': 'none'
+                            });
+                            $('.side-nav-overlay').css({
+                                'display': 'none'
+                            });
+                        }
+                        setTimeout(function () {
+                            $('header .tgv-right-block,.tgv-wrapper').css({
+                                'transition': 'all 0.5s'
+                            });
+                        }, 1000)
+
+                    });
+                //E.O Burger menu
+                //Home > now showing and cooming soon
+                // if (jQuery('.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list').length >
+                //     0) {
+                //     var ulHeight = jQuery(
+                //         '.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list').height();
+                //     setTimeout(function () {
+                //         ulHeight = jQuery(
+                //             '.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list'
+                //         ).height();
+                //     }, 100)
+
+                //     //console.log('ul height' + ulHeight);
+                //     jQuery('#comingsoon').css({
+                //         'min-height': ulHeight
+                //     })
+                // }
+
+            }
+
+
+            function TrailerScript() {
+
+                jQuery(
+                        ".tgv-trailer-block .tgv-play-icon,.tgv-favorites .favorites-container .favorites-movie .fav-play-icon,.mc-video-block figure"
+                    )
+                    .on('click', function () {
+
+                        //console.log(jQuery(this).attr('data-rel'));
+                        var ytsrv = jQuery(this).attr('data-rel');
+                        var yturl = "https://www.youtube.com/embed/" + ytsrv + "?rel=0&autoplay=1";
+                        //var vid=jQuery('.dauz-hpvideobg');
+                        //alert(yturl);
+                        jQuery(".modal .modal-dialog .modal-content iframe").attr("src", yturl);
+                    });
+                //model popup youtube url close
+                jQuery('#trailerModal').on('hidden.bs.modal', function () {
+                    jQuery('#trailerModal .modal-content .modal-body iframe').attr("src", '');
+                    jQuery('#trailerModal .modal-content .modal-body iframe').css({
+                        'diplay': 'none'
+                    });
+                    setTimeout(function () {
+                        jQuery('.tgv-banner.home-page-banner .tgv-banner-slider').slick('slickPlay');
+                    }, 200);
+                    setTimeout(function () {
+                        if ($(
+                                '.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list'
+                            )
+                            .hasClass('slick-initialized')) {
+                            jQuery(
+                                    '.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list'
+                                )
+                                .slick('slickPlay');
+                        }
+                    }, 200);
+                    //jQuery('.tgv-cinemas-list .tgv-cinemas-shows .tgv-nowshowing-block .tgv-nowshowing-list li .tgv-movie-info').removeClass('open');
+
+                });
+            }</script></div><mobile-prompt></mobile-prompt><script src="/dist/vendors~main.js"></script><script src="/dist/main.js"></script><script>var dm_id = 'DM-2935691435-03';
+        var dm_modified_date = moment().format();
+        (function(w,d,u,t,o,c){w['dmtrackingobjectname']=o;c=d.createElement(t);c.async=1;c.src=u;t=d.getElementsByTagName
+                (t)[0];t.parentNode.insertBefore(c,t);w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments);};
+                })(window, document, '//static.trackedweb.net/js/_dmptv4.js', 'script', 'dmPt');
+
+        window.dmPt('create', dm_id);</script><script src="https://r3-t.trackedlink.net/_dmpt.js"></script><script>_dmSetDomain("tgv.com.my");</script></app-root><script src="./vendors~main.js"></script><script src="./main.js"></script></body></html>
